@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 32px 44px;
+    text-align: center;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+
+}
+
+.col img {
+    width: 182px;
+    height: 182px;
+    margin-bottom: 25px;
+}
+
+.col h4 {
+    margin-bottom: 12px;
+    color: #111;
+    text-align: center;
+    font-family: Varela Round;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.col button {
+    padding: 2px 12px;
+    border-radius: 16px;
+    background-color: #a5c926;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+}
+
+/* media start */
+/* col-xl */ @media(min-width: 1200px){}
+/* col-lg */ @media(min-width: 992px) and (max-width:1199px){}
+/* col-md */ @media(min-width: 768px) and (max-width:991px){}
+/* col-sm */ @media(min-width: 576px) and (max-width:767px){}
+/* col */ @media(max-width: 575px){
+.row{
+    justify-content: center;
+}
+.col{
+    width: 90%;
+}
+}
+/* media end */
